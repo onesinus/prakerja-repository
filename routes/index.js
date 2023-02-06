@@ -1,11 +1,11 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req, res) => {
-  res.send('Hello World!')
+router.get('/hello', (req, res) => {
+  res.render('hello')
 })
 
-router.get('/test', (req, res) => {
+router.get('/', (req, res) => {
   res.render('content', { data: 'Kita dapat mengirimkan data dengan cara ini' })
 })
 

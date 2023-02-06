@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-</head>
-<body>
-    <%- include('./partials/header'); %>
-    <div>Content: <%= data %></div>
-    <%- include('./partials/footer'); %>
-</body>
+    <%- 
+      include('./partials/header', {'title': 'Final Asssessment Example'}); 
+    %>
+
+  <body>
+      <div>Content: <%= data %></div>
+  </body>
 </html>
