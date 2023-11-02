@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>E-Wallet App</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+ <div class="container">
+  <header>
+   <h1 class="text-center">Simple E-Wallet App</h1>
+  </header>
+
+  <div class="row top-upt">
+   <div class="col-md-4">
+    <h3 class="text-center">Top Up</h3>
+
+    <div class="form-group">
+     <label for="top-up-username">Pilih User</label>
+     <select id="top-up-username" class="form-control" name="">
+     </select>
+    </div>
+    <div class="form-group">
+     <label for="top-up-amount">Nominal Saldo</label>
+     <input id="top-up-amount" class="form-control" type="number" name="">
+    </div>
+    <button id="top-up-button" class="btn btn-success btn-block mb-2">Transfer</button>
+   </div>
+   <div class="col-md-8">
+    <h3 class="text-center">User Balance</h3>
+    <table class="table table-bordered table-hover table-light">
+     <thead class="text-center">
+      <tr>
+       <td>User Id</td>
+       <td>Username</td>
+       <td>Nominal</td>
+      </tr>
+     </thead>
+     <tbody id="items-balance">
+
+     </tbody>
+
+    </table>
+
+   </div>
+  </div>
+
+  <div class="row">
+   <div class="col-md-12">
+    <h3 class="text-center">Top Up History</h3>
+    <table class="table table-bordered table-hover table-striped">
+     <thead class="text-center">
+      <tr>
+       <td>Trx Id</td>
+       <td>User Id</td>
+       <td>Username</td>
+       <td>Nominal</td>
+      </tr>
+     </thead>
+     <tbody id="items-top-up-history">
+
+     </tbody>
+    </table>
+
+   </div>
+  </div>
+
+
+  <div class="row">
+   <div class="col-md-4">
+    <h3 class="text-center">Transfer</h3>
+    <div class="form-group">
+     <label for="from-username">Pilih Pengirim</label>
+     <select id="from-username" class="form-control" name="">
+     </select>
+    </div>
+    <div class="form-group">
+     <label for="to-username">Pilih Penerima</label>
+     <select id="to-username" class="form-control" name="">
+     </select>
+    </div>
+    <div class="form-group">
+     <label for="transfer-amount">Nominal Saldo</label>
+     <input id="transfer-amount" class="form-control" type="number" name="">
+    </div>
+    <button id="transfer-button" class="btn btn-success btn-block mb-2">Transfer</button>
+   </div>
+   <div class="col-md-8">
+    <h3 class="text-center">Transfer History</h3>
+    <table class="table table-bordered table-hover table-striped">
+     <thead class="text-center">
+      <tr>
+       <td>Trx Id</td>
+       <td>From User Id</td>
+       <td>To User Id</td>
+       <td>Nominal</td>
+      </tr>
+     </thead>
+     <tbody id="items-transfer-history">
+
+     </tbody>
+    </table>
+
+    <ul id="transfer-history">
+     <!-- Riwayat transfer akan ditampilkan di sini -->
+    </ul>
+   </div>
+  </div>
+ </div>
+
+ <script src="bootstrap.min.js"></script>
+ <script src="script.js"></script>
+</body>
+
+</html>
